@@ -1,3 +1,4 @@
+
 const boxes = document.querySelectorAll('.bt');
 const resultContainer = document.querySelector('.result-container');
 const resultText = document.querySelector('.result-text');
@@ -18,7 +19,7 @@ function handleBoxClick(index) {
 
 function togglePlayer() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    resultText.textContent = `Player ${currentPlayer}'s turn`;
+    resultText.textContent = `Player ${currentPlayer} turn`;
 }
 
 function checkWin() {
@@ -38,7 +39,7 @@ function checkWin() {
     }
 
     if (!gameBoard.includes('') && gameActive) {
-        resultText.textContent = 'It\'s a draw!';
+       // resultText.textContent = 'It\'s a draw!';
         gameActive = false;
         resetButton.disabled = false;
     }
@@ -50,7 +51,7 @@ function resetGame() {
         box.value = '';
     });
     currentPlayer = 'X';
-    resultText.textContent = `Player ${currentPlayer} turn`;
+    resultText.textContent = `Player ${currentPlayer}'s turn`;
     gameActive = true;
     resetButton.disabled = true;
 }

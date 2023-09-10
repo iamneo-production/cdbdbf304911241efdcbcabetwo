@@ -11,6 +11,7 @@ body {
   
 /* Enter your styling here */
 
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -50,6 +51,7 @@ header {
   color: #333;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  align-items: center;
 }
 
 .bt:hover {
@@ -59,6 +61,7 @@ header {
 .bt:disabled {
   color: black;
   cursor: no-drop;
+  align-items: center;
 }
 
 .result-container {
@@ -69,10 +72,12 @@ header {
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 10px;
+  
 }
 
 .result-text {
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-size: 25px;
+  
 }
