@@ -34,7 +34,7 @@ const handleClick = (cell, index) => {
         checkWinner();
         if (gameActive) {
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-            resultText.textContent = `Player ${currentPlayer}'s turn`;
+            resultText.textContent = `Player ${currentPlayer} turn`;
         }
     }
 };
