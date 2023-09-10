@@ -65,4 +65,4 @@ resetButton.addEventListener('click', () => {
     resetGame();
 });
 
-resetGame(); 
+resetGame(); // Initialize the game
