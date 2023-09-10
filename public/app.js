@@ -1,4 +1,3 @@
-
 const boxes = document.querySelectorAll('.bt');
 const resultContainer = document.querySelector('.result-container');
 const resultText = document.querySelector('.result-text');
@@ -19,7 +18,7 @@ function handleBoxClick(index) {
 
 function togglePlayer() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    resultText.textContent = `Player ${currentPlayer} turn`;
+    resultText.textContent = `Player ${currentPlayer}'s turn`;
 }
 
 function checkWin() {
@@ -39,7 +38,7 @@ function checkWin() {
     }
 
     if (!gameBoard.includes('') && gameActive) {
-       // resultText.textContent = 'It\'s a draw!';
+        resultText.textContent = 'It\'s a draw!';
         gameActive = false;
         resetButton.disabled = false;
     }
