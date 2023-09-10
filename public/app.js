@@ -50,7 +50,7 @@ function resetGame() {
         box.value = '';
     });
     currentPlayer = 'X';
-    resultText.textContent = `Player ${currentPlayer}'s turn`;
+    resultText.textContent = `Player ${currentPlayer} turn`;
     gameActive = true;
     resetButton.disabled = true;
 }
