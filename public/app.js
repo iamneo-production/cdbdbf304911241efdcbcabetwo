@@ -49,7 +49,7 @@ resetButton.addEventListener('click', () => {
         gameBoard[index] = '';
     });
     currentPlayer = 'X';
-    resultText.textContent = `Player ${currentPlayer}'s turn`;
+    resultText.textContent = `Player ${currentPlayer} turn`;
     resetButton.disabled = true;
     gameActive = true;
 });

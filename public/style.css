@@ -70,10 +70,10 @@ input {
     cursor: pointer;
 }*/
 
-input:hover {
+/*input:hover {
     background-color: #333;
     color: white;
-}
+}*/
 
 #result-container {
     margin-top: 20px;
